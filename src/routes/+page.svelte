@@ -52,7 +52,10 @@
         
         <div class="flex-child-output">
             Result
-            <textarea class="result-text" readonly>{result}</textarea>
+            <div class="result-div">
+                <textarea class="result-text" readonly>{result}</textarea>
+            </div>
+            
         </div>
     </div>
     <div class="button-div">
@@ -68,9 +71,6 @@
         display: flex;
         justify-content: center;
         height: 100%;
-    }
-    .copy-button {
-
     }
     body {
         font-family: "apercu",sans-serif;
@@ -93,6 +93,11 @@
         width: 100%;
         background-color: #edf5e1;
     }
+    .result-div {
+        display: flex;
+        padding-top: 14px;
+        height: 100%
+    }
     .result-text {
         background-color: #379683;
         height: 100%;
@@ -107,6 +112,6 @@
         flex: 1;
         height: 100%;
         background-color: #5CDB95;
-        padding-top: 14px;
+        padding-top: 0px;
     }
 </style>
